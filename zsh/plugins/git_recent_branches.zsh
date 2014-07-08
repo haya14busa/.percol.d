@@ -33,3 +33,15 @@ function percol-git-recent-all-branches () {
     zle clear-screen
 }
 zle -N percol-git-recent-all-branches
+
+function percol-git-branch () {
+    local selected_branch=$(git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads | \
+        perl -pne 's{^refs/heads/}{}' | \
+        percol)
+    if [ -n "$selected_branch" ]; then
+        BUFFER=${BUFFER}${selected_branch}
+        CURSOR=$#BUFFER
+    fi
+    zle clear-screen
+}
+zle -N percol-git-branch

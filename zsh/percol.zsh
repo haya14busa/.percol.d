@@ -12,6 +12,7 @@ bindkey '^r' percol_select_history
 bindkey '^g^r' percol-git-recent-remote-branches
 bindkey '^g^b' percol-git-recent-branches
 bindkey "^g^l" percol-git-log
+bindkey "^gb" percol-git-branch
 
 bindkey '^xb' percol-cdr
 
