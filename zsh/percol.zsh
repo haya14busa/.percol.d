@@ -11,6 +11,8 @@ bindkey '^r' percol_select_history
 # bindkey '^G^A' percol-git-recent-all-branches # XXX: usage?
 bindkey '^g^r' percol-git-recent-remote-branches
 bindkey '^g^b' percol-git-recent-branches
+bindkey "^g^l" percol-git-log
+
 bindkey '^xb' percol-cdr
 
 
