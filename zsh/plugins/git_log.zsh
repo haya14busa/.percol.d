@@ -3,5 +3,6 @@ function percol-git-log() {
   GIT_COMMIT_HASH=$(git log --oneline --graph --all --decorate | percol | sed -e "s/^\W\+\([0-9A-Fa-f]\+\).*$/\1/")
   BUFFER=${BUFFER}${GIT_COMMIT_HASH}
   CURSOR=$#BUFFER
+  zle clear-screen
 }
 zle -N percol-git-log
