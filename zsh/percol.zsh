@@ -15,7 +15,7 @@ bindkey "^g^l" percol-git-log
 bindkey "^gb" percol-git-branch
 
 bindkey '^xb' percol-cdr
-
+bindkey '^v' vim_plugins_directory
 
 # NOTE:
 # - [ターミナル版anything的なpercolをzawの代わりに試してみた - $shibayu36->blog;](http://shibayu36.hatenablog.com/entry/2013/10/06/184146)
